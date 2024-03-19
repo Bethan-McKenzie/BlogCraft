@@ -1,17 +1,21 @@
 {% load static %}
 
-{% url 'account_signup' as signup_url %}
+<!-- {% url 'account_login' as login_url %}
+{% url 'account_logout' as logout_url %}
+{% url 'account_signup' as signup_url %} -->
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>BlogCraft</title>
-    
+
 </head>
+
 <body>
     <!--Navigation bar is fixed currently and will hide the footer until sections are added inbetween-->
     <div class="container-fluid navalert-container">
@@ -28,7 +32,8 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="active nav-item ml-2"><a class="nav-link" href="/">Home</a></li>
                     <li class="nav-item ml-2"><a class="nav-link" href="">Create a Post</a></li>
-                    <li class="nav-item ml-2"><a class="nav-link" href="">Signup/Register</a></li>
+                    <li class="nav-item ml-2"><a class="nav-link {% if request.path == login_url %} active"
+                            aria-current="page{% endif %}" href="{% url 'account_login' %}">Login/Register</a></li>
                     <li class="nav-item ml-2"><a class="nav-link" href="">My Profile</a></li>
                 </ul>
             </div>
@@ -42,4 +47,5 @@
     {% endblock %}
     <script src="{% static 'js/script.js' %}"></script>
 </body>
+
 </html>
