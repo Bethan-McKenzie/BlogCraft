@@ -1,3 +1,88 @@
+
+/*--------------------------------------------------------------------------------General styles----*/
+
 body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
     background-color: #F8F5F4;
+}
+
+/*--------------------------------------------------------------------------------Navbar styles----*/
+
+.navalert-container {
+    position: fixed;
+    display: inline-flex;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 1;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: #202020;
+}
+
+.navbar .navbar-toggler {
+    border: 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.active {
+    border-bottom: 1px solid #F8F5F4;
+}
+
+/*--------------------------------------------------------------------------------Footer styles----*/
+
+footer {
+    background-color: #202020;
+    color: #F8F5F4;
+    min-height: 120px;
+    margin: 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    line-height: 7px;
+    text-align: center;
+    color: #F8F5F4;
+    background-color: #202020;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background: #757575;
+    color:  #52A535;
+}
+
+#footer-details {
+    padding-top: 20px;
+}
+
+#follow_minecraft {
+    text-align: center;
 }

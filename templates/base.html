@@ -1,9 +1,5 @@
 {% load static %}
 
-<!-- {% url 'account_login' as login_url %}
-{% url 'account_logout' as logout_url %}
-{% url 'account_signup' as signup_url %} -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,7 +17,7 @@
     <div class="container-fluid navalert-container">
         <nav class="navbar navbar-expand-sm">
             <a href="" class="navbar-brand">
-                <img src="../static/images/BlogCraft logo.png" alt="Blogcraft logo">
+                <img src="/static/images/BlogCraft logo.png" alt="Blogcraft logo">
             </a>
 
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -45,6 +41,47 @@
     {% block content %}
 
     {% endblock %}
+
+    <footer>
+        <div id="footer-details" class="row">
+            <div class="col-12">
+                <h3 id="follow_minecraft">Follow Minecraft</h3>
+                <ul class="list-inline social-links">
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.youtube.com/minecraft">
+                            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                            <span class="sr-only">Youtube</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.instagram.com/minecraft/">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.facebook.com/minecraft/">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://twitter.com/Minecraft">
+                            <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">X/Twitter</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://tiktok.com">
+                            <i class="fa-brands fa-reddit-alien" aria-hidden="true"></i>
+                            <span class="sr-only">Tiktok</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/cab805b0df.js" crossorigin="anonymous"></script>
     <script src="{% static 'js/script.js' %}"></script>
 </body>
 
