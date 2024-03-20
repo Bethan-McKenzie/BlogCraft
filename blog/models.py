@@ -5,6 +5,8 @@ from cloudinary.models import CloudinaryField
 
 class blog(models.Model):
     title = models.CharField(max_length=100)
+    slug = models.SlugField()
+    author = models.ForeignKey(User, on_delete = models.CASCADE)
     published_on = models.DateTimeField(default=timezone.now)
     description = models.TextField(max_length=250)
     image = CloudinaryField('image', default='placeholder')

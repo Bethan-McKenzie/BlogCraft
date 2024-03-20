@@ -5,5 +5,20 @@
 {% load static %}
 
 {% block content %}
-    <h1> Homepage</h1>
+<div class="col-12 mt-3 left">
+    <div class="row">
+        {% for post in posts %}
+            <div class="column">
+                <div class="md-4">
+                    <div class="card-body">
+                        <h2 class="title">{{ post.title }}</h2>
+                        <img src="" alt="">
+                        <p class="description">{{ post.description }}</p>
+                        <h5 class="posted-on">{{ post.published_on }}</h5>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
 {% endblock %}
