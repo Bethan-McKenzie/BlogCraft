@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <title>BlogCraft</title>
+    <title>{% block title %}{% endblock %}BlogCraft</title>
 
 </head>
 
@@ -27,10 +27,12 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item ml-2"><a class="nav-link" href="/">Home</a></li>
-                    <li class="nav-item ml-2"><a class="nav-link" href="">Create a Post</a></li>
+                    <li class="nav-item ml-2"><a class="nav-link {% if request.path == create_post %} active"
+                            aria-current="page{% endif %}" href="{% url 'create_post' %}">Create a Post</a></li>
                     <li class="nav-item ml-2"><a class="nav-link {% if request.path == login_url %} active"
                             aria-current="page{% endif %}" href="{% url 'account_login' %}">Login/Register</a></li>
-                    <li class="nav-item ml-2"><a class="nav-link" href="">My Profile</a></li>
+                    <li class="nav-item ml-2"><a class="nav-link {% if request.path == my_profile %} active"
+                        aria-current="page{% endif %}" href="{% url 'my_profile' %}">My Profile</a></li>
                 </ul>
             </div>
         </nav>
