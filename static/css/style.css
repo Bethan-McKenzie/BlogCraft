@@ -10,8 +10,8 @@ body {
     background-color: #F8F5F4;
 }
 
-a {
-    color: #F8F5F4;
+.page-content {
+    margin-top: 70px;
 }
 
 /*--------------------------------------------------------------------------------Navbar styles----*/
@@ -39,7 +39,13 @@ a {
     border: 0;
 }
 
-.nav-link li a i:hover {
+.nav-link {
+    color: #F8F5F4;
+    text-decoration: none;
+}
+
+.nav-link a i:hover {
+    background: #757575;
     color:  #52A535;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
@@ -47,9 +53,10 @@ a {
     -o-transition: all 0.35s ease-in-out;
 }
 
-nav a img {
-    max-height: 100%;
-    width: auto;
+/*--------------------------------------------------------------------------------Login Page----*/
+
+.helptext a {
+    color: #202020;
 }
 
 /*--------------------------------------------------------------------------------Footer styles----*/
