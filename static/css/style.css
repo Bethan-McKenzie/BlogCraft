@@ -14,7 +14,27 @@ body {
     margin-top: 70px;
 }
 
+a:link {
+    color: #F8F5F4;
+}
+
+a:visited {
+    color: #F8F5F4;
+}
+
+a :hover {
+    color:  #52A535;
+}
+
+a:active {
+    color: #52A535;
+}
+
 /*--------------------------------------------------------------------------------Navbar styles----*/
+
+.navbar-toggler-icon{
+    color: #F8F5F4;
+}
 
 .navalert-container {
     position: fixed;
@@ -41,27 +61,36 @@ body {
 
 .nav-link {
     color: #F8F5F4;
-    text-decoration: none;
-}
-
-.nav-link a i:hover {
-    background: #757575;
-    color:  #52A535;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
 }
 
 /*--------------------------------------------------------------------------------Home Page----*/
 
+/*--------------------------------------------------------------------------------Post card styles----*/
+
+.title {
+    text-align: center;
+    color: #F8F5F4;
+}
+
+.description {
+    margin-top: 5px;
+}
+
+p {
+    color: #F8F5F4;
+}
+
 .card-body {
-    background-color: #757575;
+    background-color: #202020;
 }
 
 /*--------------------------------------------------------------------------------Login Page----*/
 
 .helptext a {
+    color: #202020;
+}
+
+label {
     color: #202020;
 }
 
@@ -88,8 +117,8 @@ footer {
 }
 
 .social-links li a i {
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
     padding: 12px 0;
     border-radius: 50%;
     font-size: 1.5rem;
