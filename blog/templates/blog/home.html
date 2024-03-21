@@ -14,9 +14,9 @@
                         <a class="clickable-post" href="{% url 'post_detail' post.slug %}" style="text-decoration:none">
                             <h2 class="title">{{ post.title }}</h2>
                             <img class="card-img-top" src="{{ post.image.url }}" alt="{{ post.title }}">
-                            <p class="description">{{ post.description }}</p>
+                            <p class="description center">{{ post.description }}</p>
                         </a>
-                        <p class=" posted-on author"> {{ post.author }} | {{ post.published_on }}</p>
+                        <p class=" posted-on author center"> {{ post.author }} | {{ post.published_on }}</p>
                     </div>
                 </div>
             </div>

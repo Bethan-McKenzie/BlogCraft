@@ -40,6 +40,10 @@ a:active {
     display: none;
 }
 
+.center {
+    text-align: center;
+}
+
 /*--------------------------------------------------------------------------------Navbar styles----*/
 
 .navbar-toggler-icon,
@@ -68,6 +72,10 @@ a:active {
 
 .navbar .navbar-toggler {
     border: 0;
+}
+
+.show {
+    background-color: #202020;
 }
 
 /*---------------------------------------------------------------------------------------------Home Page----*/
@@ -99,6 +107,7 @@ p {
 }
 
 .detail-img {
+    margin-top: 15px;
     height: auto;
     margin-bottom: 15px;
     display: block;
@@ -106,6 +115,34 @@ p {
     margin-right: auto;
     width: 50%;
 }
+
+.icons {
+    text-align: center;
+}
+
+/*--------------------------------------------------------------------------------Post comments styles----*/
+
+.subtitle {
+    text-align: center;
+}
+
+.comment-form {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.media {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
+}
+
+.submit-btn {
+    background-color: #74b75d;
+}
+
+/*--------------------------------------------------------------------------------Create a Post styles----*/
+
+
 
 /*--------------------------------------------------------------------------------Login Page----*/
 

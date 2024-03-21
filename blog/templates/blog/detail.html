@@ -9,16 +9,16 @@
             <div class="">
                 <div class="">
                     <h2 class="detail-text">{{ post.title }}</h2>
-                    <p class="detail-text"><strong>{{ post.description }}</strong></p>
-                    <p class="detail-text"> {{ post.author }} | {{ post.published_on }}</p>
+                    <p class="detail-text center"><strong>{{ post.description }}</strong></p>
+                    <p class="detail-text center"> {{ post.author }} | {{ post.published_on }}</p>
+                    <div class="icons"><strong><i class="fa fa-comments"></i> {{ comment_count }}</strong></div>
                     <img class="detail-img" src="{{ post.image.url }}" alt="{{ post.title }}">
-                    <p class="detail-text"> {{ post.content }}</p>
+                    <p class="detail-text center"> {{ post.content }}</p>
 
                     <hr>
 
                     <h2 class="subtitle is-4">Comments:</h2>
-
-                    <form method="POST">
+                    <form method="POST" class="comment-form">
                         {% csrf_token %}
 
                         {{ form.as_p }}
@@ -40,7 +40,7 @@
                     {% endfor %}
                 </div>
             </div>
-      </div>
+        </div>
     </div>
 </div>
 {% endblock %}

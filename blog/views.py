@@ -1,5 +1,6 @@
 from django.shortcuts import get_object_or_404, redirect, render
 
+from blog.forms import PostForm
 from blog.forms import CommentForm
 from blog.models import blog
 
@@ -18,6 +19,7 @@ def my_profile(request):
 def detail(request, slug):
     post = get_object_or_404(blog, slug=slug)
     comments = post.blog_comments.all()
+    comment_count = post.blog_comments.count()
     print("I am comments", comments)
 
 
@@ -33,4 +35,9 @@ def detail(request, slug):
     else:
         form = CommentForm()
 
-    return render(request, 'blog/detail.html', {'post': post, 'form': form, 'comments': comments})
+
+    return render(request, 'blog/detail.html', {'post': post, 'form': form, 'comments': comments, 'comment_count': comment_count})
+
+def post_new(request):
+    form = PostForm()
+    return render(request, 'blog/create_post.html', {'form': form})
