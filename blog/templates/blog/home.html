@@ -12,9 +12,9 @@
                 <div class="md-4">
                     <div class="card-body">
                         <h2 class="title">{{ post.title }}</h2>
-                        <img src="" alt="">
+                        <img class="card-img-top" src="{{ post.image.url }}" alt="{{ post.title }}">
                         <p class="description">{{ post.description }}</p>
-                        <h5 class="posted-on">{{ post.published_on }}</h5>
+                        <p class="posted-on text-muted">{{ post.published_on }}</p>
                     </div>
                 </div>
             </div>
