@@ -36,6 +36,10 @@ a:active {
     color: #52A535;
 }
 
+.helptext a {
+    display: none;
+}
+
 /*--------------------------------------------------------------------------------Navbar styles----*/
 
 .navbar-toggler-icon,
@@ -105,7 +109,8 @@ p {
 
 /*--------------------------------------------------------------------------------Login Page----*/
 
-.helptext a {
+.page-content > div > p,
+.page-content > div > p > a {
     color: #202020;
 }
 
