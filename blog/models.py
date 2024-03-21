@@ -14,3 +14,9 @@ class blog(models.Model):
     keywords = models.CharField(max_length=200, blank=True)
     likes = models.ManyToManyField(User, related_name='blog_likes', blank=True)
     comments = models.ManyToManyField(User, related_name='blog_comments', blank=True)
+
+class Comment(models.Model):
+    post = models.ForeignKey(blog, related_name='blog_comments', on_delete=models.CASCADE)
+    name = models.CharField(max_length=255)
+    comment = models.TextField()
+    published_on = models.DateTimeField(default=timezone.now)
