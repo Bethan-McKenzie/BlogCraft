@@ -10,7 +10,9 @@ def home(request):
     return render(request, 'blog/home.html', {'posts': posts})
 
 def create_post(request):
-    return render(request, 'blog/create_post.html')
+    def post_new(request):
+        form = PostForm()
+    return render(request, 'blog/create_post.html', {'form': form})
 
 def my_profile(request):
     return render(request, 'blog/my_profile.html')
@@ -37,7 +39,3 @@ def detail(request, slug):
 
 
     return render(request, 'blog/detail.html', {'post': post, 'form': form, 'comments': comments, 'comment_count': comment_count})
-
-def post_new(request):
-    form = PostForm()
-    return render(request, 'blog/create_post.html', {'form': form})
