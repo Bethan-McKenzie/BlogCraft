@@ -10,7 +10,16 @@ def home(request):
     return render(request, 'blog/home.html', {'posts': posts})
 
 def create_post(request):
-    form = PostForm()
+    if request.method == 'POST':
+        form = PostForm(request.post)
+        if form.is_valid():
+            blog = form.save(commit=False)
+            blog.author = request.User
+            blog.published_on = timezone.now()
+            blog.save()
+            return redirect('post_detail', slug=slug)
+    else:
+        form = PostForm()
     return render(request, 'blog/create_post.html', {'form': form})
 
 def my_profile(request):
