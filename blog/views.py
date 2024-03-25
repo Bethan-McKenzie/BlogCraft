@@ -4,7 +4,9 @@ from django.contrib.auth.forms import UserChangeForm
 from django.http import HttpResponseRedirect
 from django.contrib.auth.models import User
 from django.utils import timezone
+from django.urls import reverse
 
+from blog.forms import EditProfileForm
 from blog.forms import PostForm
 from blog.forms import CommentForm
 from blog.models import blog
@@ -62,7 +64,7 @@ def edit_profile(request):
 
         if form.is_valid():
             form.save()
-            return redirect('https://8000-bethanmckenzi-blogcraft-ku1kzwexrtm.ws-eu110.gitpod.io/my_profile/')
+            return HttpResponseRedirect(reverse('my_profile'))
 
     else:
         form = EditProfileForm(instance=request.user)

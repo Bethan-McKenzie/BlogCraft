@@ -27,8 +27,8 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('admin/', admin.site.urls),
     path('create_post/', create_post, name='create_post'),
-    path('edit_profile/', edit_profile, name='edit_profile'),
     path('my_profile/', my_profile, name='my_profile'),
+    path('edit_profile/', edit_profile, name='edit_profile'),
     path('', include('blog.urls')),
     path('', home, name='home'),
 ]
