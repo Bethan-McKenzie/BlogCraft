@@ -155,6 +155,32 @@ label {
     color: #202020;
 }
 
+/*--------------------------------------------------------------------------------My Profile Page----*/
+
+/* Future Implimentation of Profile Pictures
+#display-image{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #202020;
+    background-position: center;
+    background-size: cover;
+  }
+*/
+.my-profile-main-container {
+    text-align: center;
+}
+
+.my-profile {
+    color: #202020;
+}
+
+
+/*--------------------------------------------------------------------------------My Profile Page----*/
+
+form > #id_password {
+    display: none;
+}
+
 /*--------------------------------------------------------------------------------Footer styles----*/
 
 footer {
