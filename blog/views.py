@@ -23,7 +23,10 @@ def create_post(request):
     return render(request, 'blog/create_post.html', {'form': form})
 
 def my_profile(request):
-    return render(request, 'blog/my_profile.html')
+    context = {
+        'user': request.user
+    }
+    return render(request, 'blog/my_profile.html', context)
 
 
 def detail(request, slug):

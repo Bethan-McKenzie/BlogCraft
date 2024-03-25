@@ -4,6 +4,17 @@
 
 {% block content %}
 
-<h1> My Profile </h1>
+<div class="my-profile-main-container">
+    <h2> My Profile </h2>
+
+    <!-- For Future Implimentation of Profile Pictures
+    <div id="display-image"></div>
+     <input type="file" id="image-input" accept="image/jpeg, image/png, image/jpg">-->
+    <p class="my-profile">Username: {{ user }}</p>
+    <p class="my-profile">Email: {{ user.email }}</p>
+    <p class="my-profile">Joined: {{ user.date_joined }}</p>
+
+    <a href="https://8000-bethanmckenzi-blogcraft-ku1kzwexrtm.ws-eu110.gitpod.io/edit_profile/"><button class="edit-profile-btn">Edit My Profile!</button></a>
+</div>
 
 {% endblock %}
