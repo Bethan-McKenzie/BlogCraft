@@ -20,3 +20,7 @@ class Comment(models.Model):
     name = models.CharField(max_length=255)
     comment = models.TextField()
     published_on = models.DateTimeField(default=timezone.now)
+
+class UserProfile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    image = CloudinaryField('image', blank=True)
