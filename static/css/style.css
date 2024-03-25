@@ -97,6 +97,7 @@ p {
 
 .card-body {
     background-color: #202020;
+    margin-bottom: 25px;
 }
 
 /*--------------------------------------------------------------------------------Post detail styles----*/
