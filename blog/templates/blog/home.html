@@ -11,7 +11,7 @@
             <div class="column">
                 <div class="md-4">
                     <div class="card-body">
-                        <a class="clickable-post" href="{% url 'post_detail' post.slug %}" style="text-decoration:none" target="_blank">
+                        <a class="clickable-post" href="{% url 'detail' %}" style="text-decoration:none" target="_blank">
                             <h2 class="title">{{ post.title }}</h2>
                             <img class="card-img-top" src="{{ post.image.url }}" alt="{{ post.title }}">
                             <p class="description center">{{ post.description }}</p>
