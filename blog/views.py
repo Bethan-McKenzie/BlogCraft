@@ -13,8 +13,12 @@ from blog.forms import CommentForm
 from blog.models import blog
 
 def home(request):
-    post = blog.objects.all()
-    return render(request, 'blog/home.html')
+    posts = blog.objects.all()
+    context = {
+        'posts': posts,
+        'slug': blog.slug
+        }
+    return render(request, 'blog/home.html', context)
 
 def create_post(request):
     if request.method == 'POST':
@@ -32,9 +36,7 @@ def create_post(request):
     return render(request, 'blog/create_post.html', {'form': form})
 
 def my_profile(request):
-    context = {
-        'user': request.user
-    }
+    context = {'user': request.user}
     return render(request, 'blog/my_profile.html', context)
 
 
