@@ -16,6 +16,9 @@
                     <p class="detail-text center"> {{ post.content }}</p>
 
                     <hr>
+                        {% if user.is_authenticated and post.author == user or user.is_superuser %}
+                        <button class="btn btn-danger btn-delete m-1" slug="{{ post.slug }}">Delete Post</button>
+                        {% endif %}
 
                     <h2 class="subtitle is-4">Comments:</h2>
                     <form method="POST" class="comment-form">

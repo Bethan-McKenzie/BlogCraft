@@ -6,7 +6,6 @@ from django.contrib.auth.models import User
 from django.utils import timezone
 from django.urls import reverse
 from django.utils.text import slugify
-
 from blog.forms import EditProfileForm
 from blog.forms import PostForm
 from blog.forms import CommentForm
@@ -44,7 +43,6 @@ def detail (request, slug):
     post = get_object_or_404(blog, slug=slug)
     comments = post.blog_comments.all()
     comment_count = post.blog_comments.count()
-    print("I am comments", comments)
 
 
     if request.method == 'POST':
@@ -74,3 +72,13 @@ def edit_profile(request):
         form = EditProfileForm(instance=request.user)
         args = {'form': form}
     return render(request, 'blog/edit_profile.html', args)
+
+def delete_post(request,slug):
+    """ 
+    Allows a logged in user to delete their own posts in post_detail, also allows a superuser to delete any post from the post_detail
+    """
+    post = get_object_or_404(blog, slug=blog.slug)
+    if request.user == blog.author or request.user.is_superuser:
+        post.delete()
+        messsages.success(request, f"Successfully deleted.")
+        return HttpResponseRedirect('blog/home.html')
