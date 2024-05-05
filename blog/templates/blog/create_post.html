@@ -6,7 +6,7 @@
     <div>
         <h2 class="subtitle"> Create a post! </h2>
 
-        <form method="POST" class="post-form">
+        <form enctype="multipart/form-data" method="POST" class="post-form">
             {% csrf_token %}
 
             {{ form.as_p }}

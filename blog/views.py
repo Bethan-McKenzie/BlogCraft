@@ -44,7 +44,6 @@ def detail (request, slug):
     comments = post.blog_comments.all()
     comment_count = post.blog_comments.count()
 
-
     if request.method == 'POST':
         form = CommentForm(request.POST)
 
@@ -74,11 +73,17 @@ def edit_profile(request):
     return render(request, 'blog/edit_profile.html', args)
 
 def delete_post(request,slug):
-    """ 
+    """
     Allows a logged in user to delete their own posts in post_detail, also allows a superuser to delete any post from the post_detail
     """
-    post = get_object_or_404(blog, slug=blog.slug)
-    if request.user == blog.author or request.user.is_superuser:
-        post.delete()
-        messsages.success(request, f"Successfully deleted.")
-        return HttpResponseRedirect('blog/home.html')
+    post = get_object_or_404(blog, slug=slug)
+    if request.user == post.author or request.user.is_superuser:
+        if request.method =="POST":
+        # delete post
+            post.delete()
+            # after deleting redirect to 
+            # home page
+            messsages.success(request, f"Successfully deleted.")
+        else:
+            messages.success(request, f"Post not deleted.")
+        return HttpResponseRedirect('/')
