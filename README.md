@@ -8,7 +8,7 @@ Blogcraft is a site which aims to bring together the Minecraft community! They c
 This website has been built using the Django framework for functionality with both frontend and backend.
 
 Blogcraft allows the user to register, create posts as well as have a profile which can have the information (such as username and email address) changed and saved.
-Currently there are three bugs in the site that I am unable to fix, due to time restraints caused by uncontrollable circumstances, and thus do not allow the user to delete their own posts, show the images that a user uploads when creating a post or allow users engage with the community through comments on posts (more information [here]() in the bugs section).
+Currently there are three bugs in the site that I am unable to fix, due to time restraints caused by uncontrollable circumstances, and thus do not allow the user to delete their own posts, show the images that a user uploads when creating a post or allow users engage with the community through comments on posts (more information [here](https://github.com/Bethan-McKenzie/BlogCraft/blob/main/README.md#bugs) in the bugs section).
 
 The link to the live site can be found [here](https://bethanmckenzie-blogcraft-b4a04edf4612.herokuapp.com)
 
@@ -59,7 +59,7 @@ Although unstyled the sign up page works perfectly for functionality.
 
 ## My Profile
 
-When loggedin users can access their profile that for now only contains their username, email and when they signed up however future features are planned!
+When logged in, users can access their profile that for now only contains their username, email and when they signed up however future features are planned!
 
 ![Image of my profile page](https://github.com/Bethan-McKenzie/BlogCraft/blob/main/media/my-profile.png)
 
