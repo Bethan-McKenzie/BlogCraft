@@ -122,9 +122,13 @@ All images used throughout the site are completely copyright free as they came f
 
 ## Development
 
+Using a kanban board that can be found [here](https://github.com/users/Bethan-McKenzie/projects/2/views/1) I was able to keep track of what progress was being made towards the completeion of the site.
+
 <hr>
 
 ## Testing
+
+Blogcraft has been tested on multiple devices such as PC, Tablet and Mobiles to ensure the desired outcome across all devices.
 
 ## HTML
 [The Markup Validation Service](https://validator.w3.org) was used to check the validation and compliancy of all my pages. There was an issue brought up on the My Profile page with the efit my profile button however, due to time constraints it couldn't be changed and will be changed in the next iteration to meet HTML standards.
@@ -148,18 +152,93 @@ Blogcraft has been checked on multiple browsers such as Safari, Google Chrome an
 
 ## Future Features
 
+<hr>
+
 ### Known Issues & Bugs
+
+## Bugs
+
+There are currently three bugs in the site that due to time restaints couldn't be solved.
+
+- When a user creates a post and uploads and image with it, the image doesn't get uploaded to Cloudinary so a placeholder image is shown on the site instead.
+
+- The delete post functionality isn't quite there as, when the user who made the post clicks the delete button, it doesn't delete the post.
+
+- When a user comments on a post a 404 page is displayed however, if you were to go back on the post the comment is there.
+
+I believe that in the next iteration of the project all these bugs could be solved with some time that I unfortunately didn't have.
+
+## Issues
+
+- Currently users can upload image files of any size, this could slow the website down in future and compression or cropping of user-uploaded images should be implemented to solve this.
+
+- Currently users are unable to add alt-text to images that they upload. This presents an accessibility problem and should be remedied to ensure the website reflecting an inclusive community is truly inclusive in it's own design.
 
 <hr>
 
 ## Technologies
 
+## Languages
+
+Python, JavaScript, HTML, CSS
+
+## Programs, Frameworks and Libraries
+
+[Git](https://git-scm.com)
+[GitHub](https://github.com)
+[GitPod](https://dashboard.heroku.com/apps)
+[Heroku](https://dashboard.heroku.com/apps)
+[Bootstrap 4.1.3](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
+[FontAwesome](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
+[Django](https://www.djangoproject.com)
+Django AllAuth
+[PostgreSQL](https://www.postgresql.org)
+[ElephantSQL](https://www.elephantsql.com)
+[Cloudinary](https://cloudinary.com)
+[Code Institute Template](https://github.com/Code-Institute-Org/gitpod-full-template)
+[Balsamiq](https://balsamiq.com)
+
 <hr>
 
 ## Deployment
 
+## Github
+
+After making a new respository for my capstone project from the [CI template](https://github.com/Code-Institute-Org/gitpod-full-template), I created a workspace in gitpod where all of my development took place.
+
+## Development Environment Set Up
+
+For ease of set up and to ensure nothing was forgotten I followed along with Kevin-CI's video that was made for our third hackathon to ensure that no future problems would come from the environment being incorrectly set up.
+
+## Heroku
+
+Heroku is used to host Blogcraft. Heroku is a container-based cloud Platform for building, deploying and managing apps. This project was first deployed to Heroku in the very early stages following app structure setup.
+
+Towards the end of the project I regenerated the SECRET_KEY and did the following;
+
+Add Django secret key to config vars SECRET_KEY
+
+I redeployed to Heroku roughly once a day.
+
+Prior to submitting the finished project I ensured I had DEBUG=False in settings.py
+
 <hr>
 
 ## Credits
+
+[StackOverflow](https://stackoverflow.com) for helping debug.
+[Net Ninja](https://www.youtube.com/@NetNinja), [Code With Stein](https://www.youtube.com/@CodeWithStein) & [Max Goodridge](https://www.youtube.com/@MaxGoodridgeTech) for their youtube tutorials helping me to better understand Django.
+
+<hr>
+
+## Personal Acnowlegements
+
+- The amazing people that I shared my bootcamp with, who made me smile and laugh when I was stressed out, gave me a helping hand when needed, who reached out when they needed something allowing me to better my understanding by helping others and letting me know that I wasn't alone in this. Your comradery got me through some tough times, I hope I helped you as well. I'm going to miss you all and I hope we stay in touch :)
+
+- I would like to thank our facilitator Iris Smok, and our two coding coaches amd SMEs Martin McInerney and Kevin Loughrey for their patience, encouragement, humour, clear instruction and putting up with my tired brain.
+
+- Lastly but certainly not least, I would like to thank my Code Institute mentor, Ronan McClelland for his insight and encouragement during the final project.
+
+  I couldn't have done it without you all so thank you, from the bottom of my heart
 
 <hr>
