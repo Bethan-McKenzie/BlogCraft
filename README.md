@@ -1,110 +1,108 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Blogcraft (Capstone Project for Code Insitute - Coleg Gwent Bootcamp)
+![Image of the Blogcraft homepage](https://github.com/Bethan-McKenzie/BlogCraft/blob/main/media/Homepage%20of%20Blogcraft.png)
 
-Welcome Bethan McKenzie,
+Blogcraft is a site which aims to bring together the Minecraft community! They can share their builds, any bugs found, Minecraft content creators they like and so much more. The idea stemmed from my love of the game and the fact that there's not really a place dedicated to just Minecraft like this.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Purpose
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+This website has been built using the Django framework for functionality with both frontend and backend.
 
-## Gitpod Reminders
+Blogcraft allows the user to register, create posts as well as have a profile which can have the information (such as username and email address) changed and saved.
+Currently there are three bugs in the site that I am unable to fix, due to time restraints caused by uncontrollable circumstances, and thus do not allow the user to delete their own posts, show the images that a user uploads when creating a post or allow users engage with the community through comments on posts (more information [here]() in the bugs section).
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The link to the live site can be found [here](https://bethanmckenzie-blogcraft-b4a04edf4612.herokuapp.com)
 
-`python3 -m http.server`
+<hr>
 
-A blue button should appear to click: _Make Public_,
+## Features
 
-Another blue button should appear to click: _Open Browser_.
+## Homepage
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+A fully responsive homepage featuring posts that users have made inside cards that adapt their size based on multiple factors such as, the amount of text needing to be displayed, the size of the image for the post and the size of the screen the user is viewing on.
 
-A blue button should appear to click: _Make Public_,
+![Image of Blogcraft Desktop Homepage](https://github.com/Bethan-McKenzie/BlogCraft/blob/main/media/Homepage%20of%20Blogcraft.png)
 
-Another blue button should appear to click: _Open Browser_.
+![Image of Blogcraft Tablet Homepage](https://github.com/Bethan-McKenzie/BlogCraft/blob/main/media/Blogcraft%20Homepage%20Tablet.png)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+![Image of Blogcraft Mobile Homepage](https://github.com/Bethan-McKenzie/BlogCraft/blob/main/media/Blogcraft%20Homepage%20Mobile.png)
 
-To log into the Heroku toolbelt CLI:
+## Navbar
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+![Image of navbar with user not logged in](https://github.com/Bethan-McKenzie/BlogCraft/blob/main/media/Navbar%20of%20user%20not%20logged%20in.png)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+Featuring a navbar that changes options depending on if the user is logged in or not throughout the site and what areas they can access depending on that status.
 
-------
+![Image of navbar with user logged in](https://github.com/Bethan-McKenzie/BlogCraft/blob/main/media/Navbar.png)
 
-## Release History
+The navbar is also responsive throughout ensuring users easy navigation throughout the site no matter what device they're accessing from changing to a dropdown menu for both tablet and mobile devices.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+![Image of responsive navbar](https://github.com/Bethan-McKenzie/BlogCraft/blob/main/media/dropdown-navbar.png)
 
-**September 20 2023:** Update Python version to 3.9.17.
+## Footer
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+Throughout the site the footer remains constant and allows users to follow official Minecraft accounts on different platforms with ease.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+![Image of the site footer](https://github.com/Bethan-McKenzie/BlogCraft/blob/main/media/footer.png)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+## Login
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+Users can eaily navigate to the login page where they are met with a prompt for them to sign in or if they have yet to register a link to sign up
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+![Image of sigh in page](https://github.com/Bethan-McKenzie/BlogCraft/blob/main/media/sign-in.png)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+The interface allows for users to click the 'remember me' checkbox to have the site remember their login details and quickly get into their account with no hassle!
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+![Image of sign up page](https://github.com/Bethan-McKenzie/BlogCraft/blob/main/media/blogcraft%20sign%20up.png)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+Although unstyled the sign up page works perfectly for functionality.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## My Profile
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+When loggedin users can access their profile that for now only contains their username, email and when they signed up however future features are planned!
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+![Image of my profile page](https://github.com/Bethan-McKenzie/BlogCraft/blob/main/media/my-profile.png)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+The page also contains a button to redirect the user to the edit profile page where they can edit their username and or email address and save those changes.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+![Image of edit profile page](https://github.com/Bethan-McKenzie/BlogCraft/blob/main/media/blogcraft%20edit%20profile.png)
 
-------
+<hr>
 
-## FAQ about the uptime script
+## UX & Design
 
-**Why have you added this script?**
+<hr>
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+## Wireframes
 
-**How will this affect me?**
+<hr>
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+## Database
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+<hr>
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+## Development
 
-**So….?**
+<hr>
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+## Testing
 
-**Can I opt out?**
+<hr>
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+## Future Features
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+### Known Issues & Bugs
 
-**Anything more?**
+<hr>
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+## Technologies
 
----
+<hr>
 
-Happy coding!
+## Deployment
+
+<hr>
+
+## Credits
+
+<hr>
