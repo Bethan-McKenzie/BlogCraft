@@ -88,6 +88,13 @@ Each post detail page has a comments section at the bottom where users will be a
 <hr>
 
 ## UX & Design
+
+The colours of the site were chosen to fit the goal of users knowing what the site is and what it's about. Eerie Black, Kelly Green and Gray are used throughout Minecraft's official website and would be very familiar to those who have viewed that site before. The White Smoke was chosen as a white that isn't harsh on the eyes but still provides high contrast for ultimate accessability.
+
+![Image of colour palette](https://github.com/Bethan-McKenzie/BlogCraft/blob/main/media/BlogCraft%20colour%20palette.png)
+
+All images used throughout the site are completely copyright free as they came from my own gameplay of Minecraft and were screenshots I had done myself.
+
 ## Wireframes
 ## Homepage
 ![Image of Homepage Wireframe](https://github.com/Bethan-McKenzie/BlogCraft/blob/main/media/blogcraft%20wireframe%20homepage.png)
@@ -118,6 +125,24 @@ Each post detail page has a comments section at the bottom where users will be a
 <hr>
 
 ## Testing
+
+## HTML
+[The Markup Validation Service](https://validator.w3.org) was used to check the validation and compliancy of all my pages. There was an issue brought up on the My Profile page with the efit my profile button however, due to time constraints it couldn't be changed and will be changed in the next iteration to meet HTML standards.
+
+## CSS
+Blogcraft has passed CSS validation using [The CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+
+![Image of CSS Validation](https://github.com/Bethan-McKenzie/BlogCraft/blob/main/media/W3C%20CSS%20validation.png)
+
+## Lighthouse
+
+Blogcraft was checked using Lighthouse to ensure accessability and standards are met.
+
+![Image of Lighthouse Testing](https://github.com/Bethan-McKenzie/BlogCraft/blob/main/media/blogcraft%20lighthouse.png)
+
+## Browser Compatibility
+
+Blogcraft has been checked on multiple browsers such as Safari, Google Chrome and Opera GX to ensure that the site meets expectations across a range of different browsers for best user experience.
 
 <hr>
 
