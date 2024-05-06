@@ -34,7 +34,7 @@ import cloudinary.api
 SECRET_KEY = '95DB6D8FC4756F74'
 
 # SECURITY WARNING: don't run with debug turned on in pdjango-insecure-rom6f$9@b$0xr9!iy1#pd9r0li+pi+6!g53onln)_q%f)yj)55roduction!
-DEBUG = 'DEBUG' in os.environ
+DEBUG = False
 
 ALLOWED_HOSTS = ['.gitpod.io', '.herokuapp.com']
 CSRF_TRUSTED_ORIGINS = ['https://*.gitpod.io', 'https://*.herokuapp.com']
