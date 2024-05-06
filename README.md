@@ -67,17 +67,49 @@ The page also contains a button to redirect the user to the edit profile page wh
 
 ![Image of edit profile page](https://github.com/Bethan-McKenzie/BlogCraft/blob/main/media/blogcraft%20edit%20profile.png)
 
+## Creating a post
+
+Creating a post is extremely simple for the users, all they have to do is be logged in, navigate to the correctly marked page via navbar, fill in the relevant information and hit post!
+
+![Image of create a post page](https://github.com/Bethan-McKenzie/BlogCraft/blob/main/media/blogcraft%20create%20a%20post.png)
+
+## Post Detail
+
+When the user clicks on the post they wish to see they're able to read what the user has posted from the title down to the last period. The user is able to see how many comments the post has at the top under the description text and were they to scroll down they can join the conversation with other members in the comments section of that particular post.
+
+![Image with the details of the post](https://github.com/Bethan-McKenzie/BlogCraft/blob/main/media/blogcraft%20post%20detail.png)
+
+## Comments
+
+Each post detail page has a comments section at the bottom where users will be able to engage with the community. There is a current bug where it's not fully functional right now, more about this [here]().
+
+![Image of comments section](https://github.com/Bethan-McKenzie/BlogCraft/blob/main/media/write-comment.png)
+
 <hr>
 
 ## UX & Design
-
-<hr>
-
 ## Wireframes
+## Homepage
+![Image of Homepage Wireframe](https://github.com/Bethan-McKenzie/BlogCraft/blob/main/media/blogcraft%20wireframe%20homepage.png)
+## Sign In
+![Image fo sign in wireframe](https://github.com/Bethan-McKenzie/BlogCraft/blob/main/media/blogcraft%20wireframe%20sign%20in.png)
+## Sign Up
+![Image fo sign up wireframe](https://github.com/Bethan-McKenzie/BlogCraft/blob/main/media/blogcraft%20wireframe%20sign%20up.png)
+## My Profile
+![Image of my profile wireframe](https://github.com/Bethan-McKenzie/BlogCraft/blob/main/media/blogcraft%20wireframe%20user%20profile.png)
+## Create Post
+![Image of create a post wireframe](https://github.com/Bethan-McKenzie/BlogCraft/blob/main/media/blogcraft%20wireframe%20create%20post.png)
+## Post Detail
+![Image of post detail wireframe](https://github.com/Bethan-McKenzie/BlogCraft/blob/main/media/blogcraft%20wireframe%20view%20post.png)
+## Comments
+![Image of comments wireframe](https://github.com/Bethan-McKenzie/BlogCraft/blob/main/media/blogcraft%20wireframe%20comments.png)
 
 <hr>
 
 ## Database
+
+![Image of Blogcraft ERD](https://github.com/Bethan-McKenzie/BlogCraft/blob/main/media/blogcraft%20ERD.png)
+![Image of model being implimented](https://github.com/Bethan-McKenzie/BlogCraft/blob/main/media/blog%20model.png)
 
 <hr>
 
