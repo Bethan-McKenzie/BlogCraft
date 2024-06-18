@@ -31,10 +31,10 @@ import cloudinary.api
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '95DB6D8FC4756F74'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in pdjango-insecure-rom6f$9@b$0xr9!iy1#pd9r0li+pi+6!g53onln)_q%f)yj)55roduction!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['.gitpod.io', '.herokuapp.com', '.blogcraft-igg7.onrender.com']
 CSRF_TRUSTED_ORIGINS = ['https://*.gitpod.io', 'https://*.herokuapp.com', 'https://*.onrender.com']
