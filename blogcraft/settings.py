@@ -36,8 +36,8 @@ SECRET_KEY = '95DB6D8FC4756F74'
 # SECURITY WARNING: don't run with debug turned on in pdjango-insecure-rom6f$9@b$0xr9!iy1#pd9r0li+pi+6!g53onln)_q%f)yj)55roduction!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.gitpod.io', '.herokuapp.com', 'https://blogcraft-igg7.onrender.com/']
-CSRF_TRUSTED_ORIGINS = ['https://*.gitpod.io', 'https://*.herokuapp.com', 'https://blogcraft-igg7.onrender.com/']
+ALLOWED_HOSTS = ['.gitpod.io', '.herokuapp.com', 'blogcraft-igg7.onrender.com']
+CSRF_TRUSTED_ORIGINS = ['https://*.gitpod.io', 'https://*.herokuapp.com', 'https://*.onrender.com']
 
 # Application definition
 
